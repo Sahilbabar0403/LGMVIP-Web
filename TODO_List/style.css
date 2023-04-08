@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #0b87ff;
+  }
+  .container {
+    width: 90%;
+    max-width: 34em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  .parent{
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 80vh;
+    border-color: white;
+    border-style: solid;
+  }
+  #new-task {
+    position: relative;
+    background-color: #ffffff;
+    margin-top: 10px;
+    padding: 1em 1.25em;
+    border-radius: 0.3em;
+    box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1em;
+  }
+  #new-task input {
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    
+    padding: 0.8em 0.5em;
+    color: #111111;
+    font-weight: 500;
+  }
+.header{
+    margin-left: auto;
+    margin-right: auto;
+}
+  .heading{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5em;
+    color: #ee5050;
+    background-color: rgb(65, 171, 237);
+    background-image: linear-gradient(to bottom right, rgb(65, 171, 237), white);
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 50px;
+    padding: 25px;
+  }
+
+  #new-task input:focus {
+    outline: none;
+    border-color: #0b87ff;
+  }
+  #new-task button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    background-color: #0b87ff;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+  }
+  #tasks {
+    background-color: #ffffff;
+    position: relative;
+    padding: 1.8em 1.25em;
+    margin-top: 3.8em;
+    width: 100%;
+    box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
+    border-radius: 0.6em;
+  }
+  .task {
+    background-color: #ffffff;
+    padding: 0.3em 0.6em;
+    margin-top: 0.6em;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #d1d3d4;
+    cursor: pointer;
+  }
+  .task span {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+  }
+  .task button {
+    color: #ffffff;
+    padding: 0.8em 0;
+    width: 2.8em;
+    border-radius: 0.3em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .delete {
+    background-color: #fb3b3b;
+  }
+  .edit {
+    background-color: #0b87ff;
+    margin-left: auto;
+    margin-right: 3em;
+  }
+  .completed {
+    text-decoration: line-through;
+  }
